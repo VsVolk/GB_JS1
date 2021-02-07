@@ -1,13 +1,38 @@
-// Температура 
-var x, y;
-x = prompt('Введите температру по Цельсию?')
-y = (9/5)*x+32;
-console.log('Температра по Фарангейту равна ' + y);
 
-//Переменные
-var name ='Василий', admin;
-admin = name;
-console.log(admin); 
+//Вывести простые числа
+var i=1;
+while (i<=100) {
+i++;
+for(var j=2; j<=i; j++){
+    if (i%j == 0)
+    break;
+}
+if(j==i)
+console.log(i);
+}
 
-//Чему равно выражение
-console.log( 1000 + "108"); //1000108
+//стоимость корзины
+let arr = [
+    24, 49.8, 
+    60.6, 37.3,
+     58, 25.5]
+
+function countBasketPrice (array) {
+    var sum=0;
+    for(var i=0;i<arr.length;i++) {
+    sum = sum + parseInt(arr[i]);
+    }
+    console.log(sum);
+}
+
+countBasketPrice(arr);
+
+// вывод 0-9 не используя тело цикла
+for (var i = 0; i<10; console.log(i++)) {
+
+}
+
+//Ёлочка
+for (let x = "x"; x.length<=20; x+="x") {
+    console.log(x);
+}
