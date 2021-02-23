@@ -7,24 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="wrap">
-    <div id="num">
-        <ol type="A" reversed>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-            <li class="list"></li>
-        </ol>
-    </div>
-    <div id="chess"></div>
-    </div>
-    <div>
-        <p class="list">1 2 3 4 5 6 7 8</p>
-    </div>
+    <div class="wrapper">
+        <div class="product-list" id="product-list">
+          <div class="product-item">
+            <div class="product-image">
+              <img src="./images/product.jpg">
+            </div>
+            <div class="product-name">
+              test 1
+            </div>
+            <div class="product-action">
+              <div class="product-price">100</div>
+              <a class="product-add-cart" 
+                href="#" 
+                data-product="111" 
+                data-name="test 1" 
+                data-price="100"
+                >Купить</a>
+            </div>
+          </div>
+          <div class="product-item">
+            <div class="product-image">
+              <img src="./images/product.jpg">
+            </div>
+            <div class="product-name">
+              test 2
+            </div>
+            <div class="product-action">
+              <div class="product-price">120</div>
+              <a 
+                class="product-add-cart" 
+                href="#" 
+                data-product="222" 
+                data-name="test 2" 
+                data-price="120"
+                >Купить</a>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart-title">Корзина</div>
+          <div class="cart-items" id="cart-items"></div>
+          <div class="cart-total-price">Итого: <span id="total-price">0</span></div>
+        </div>
+      </div>
     <script src="main.js"></script>
 </body>
 </html>
